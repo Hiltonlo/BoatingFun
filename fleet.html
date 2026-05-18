@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fleet — Maris Yacht Charters</title>
+  <meta name="description" content="Browse the Maris fleet of motor yachts, sailing yachts, catamarans, and day cruisers available for private crewed charter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav solid">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">MARIS<span class="gold">.</span></a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html" class="active">Fleet</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html" class="nav-cta">Reserve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Our Fleet</span>
+      <h1>Twelve vessels, twelve stories</h1>
+      <p>From intimate day cruisers to flagship superyachts — each thoughtfully selected, fully crewed, and ready for the season ahead.</p>
+    </div>
+  </section>
+
+  <div class="fleet-filters">
+    <div class="container">
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All Yachts</button>
+        <button class="filter-btn" data-filter="motor">Motor Yachts</button>
+        <button class="filter-btn" data-filter="sailing">Sailing</button>
+        <button class="filter-btn" data-filter="catamaran">Catamarans</button>
+        <button class="filter-btn" data-filter="day">Day Cruisers</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="fleet-preview" style="padding-top: 4rem;">
+    <div class="container">
+      <div class="yacht-grid" id="fleet-grid"></div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="container">
+      <span class="eyebrow">Not sure where to start?</span>
+      <h2>Let us help you choose.</h2>
+      <p>Tell us a little about your trip — group size, dates, region, mood — and we'll suggest two or three yachts that fit beautifully.</p>
+      <a href="contact.html" class="btn btn-primary">Speak with a planner</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom: 1.25rem;">MARIS<span class="gold">.</span></div>
+          <p>Private luxury yacht charters in the Mediterranean and Caribbean. Operating since 2005.</p>
+        </div>
+        <div>
+          <h4>Charter</h4>
+          <ul>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="booking.html">Reserve</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>Quai Antoine 1er, Monaco</li>
+            <li>+377 99 99 12 34</li>
+            <li>charter@marisyachts.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Maris Yacht Charters. All rights reserved.</div>
+        <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
