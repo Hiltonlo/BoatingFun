@@ -415,7 +415,7 @@ function initContact() {
       }
     } catch (err) {
       console.error(err);
-      alert('Something went wrong sending your message. Please try again, or email charter@marisyachts.com.');
+      alert('Something went wrong sending your message. Please try again, or email delbusinessenterprises@hotmail.com.');
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
     }
