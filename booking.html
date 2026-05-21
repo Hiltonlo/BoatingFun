@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reserve Your Charter — Maris Yacht Charters</title>
-  <meta name="description" content="Reserve your private yacht charter. Choose your yacht, select dates, and confirm — your dedicated planner takes it from there.">
+  <title>Book Your Event — Lake Conroe Escapes</title>
+  <meta name="description" content="Book your Lake Conroe group experience — business outings, reunions, celebrations, and holiday events. Private boating, golf, private club, and fine dining.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -14,23 +14,23 @@
 
   <nav class="nav solid">
     <div class="nav-inner">
-      <a href="index.html" class="logo">MARIS<span class="gold">.</span></a>
+      <a href="index.html" class="logo">CONROE<span class="gold">.</span></a>
       <button class="nav-toggle" aria-label="Menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="fleet.html">Experiences</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="nav-cta active">Reserve</a></li>
+        <li><a href="booking.html" class="nav-cta active">Book Now</a></li>
       </ul>
     </div>
   </nav>
 
   <section class="page-hero">
     <div class="container">
-      <span class="eyebrow">Reserve Your Charter</span>
-      <h1>Begin your journey</h1>
-      <p>Submit your preferred yacht and dates. A dedicated planner will confirm availability within four hours and walk you through the rest.</p>
+      <span class="eyebrow">Book Your Experience</span>
+      <h1>Your day on the lake starts here</h1>
+      <p>Submit your event details and we'll get back to you within one business day with availability and a custom proposal — no payment required today.</p>
     </div>
   </section>
 
@@ -38,52 +38,64 @@
     <div class="container">
       <div id="booking-form-wrap">
         <div class="booking-grid">
+
           <!-- Form -->
-          <!-- TO RECEIVE EMAILS: replace YOUR_FORMSPREE_ID below with your Formspree form ID.
-               1. Sign up at https://formspree.io  2. Create a new form  3. Copy your ID from the form's endpoint URL -->
+          <!-- TO RECEIVE EMAILS: replace YOUR_FORMSPREE_ID with your Formspree form ID.
+               Sign up at formspree.io, create a form, copy the ID from the endpoint URL. -->
           <form class="booking-form" id="booking-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" novalidate>
-            <input type="hidden" name="_subject" value="New charter reservation request">
-            <h2 style="margin-bottom: 0.5rem;">Charter Details</h2>
-            <p style="color: var(--muted); margin-bottom: 2rem;">All fields required. A 30% APA (Advance Provisioning Allowance) is typically added to cover fuel, food, and harbor fees.</p>
+            <input type="hidden" name="_subject" value="New Lake Conroe event inquiry">
+
+            <h2 style="margin-bottom: 0.5rem;">Event Details</h2>
+            <p style="color: var(--muted); margin-bottom: 2rem;">Fill in what you know — we'll handle the rest and follow up with your custom proposal.</p>
 
             <div class="form-group">
-              <label>Yacht</label>
-              <select name="yacht" required></select>
+              <label>Experience / Package</label>
+              <select name="experience" required></select>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label>Start Date</label>
-                <input type="date" name="start" required>
+                <label>Preferred Date</label>
+                <input type="date" name="event_date" required>
               </div>
               <div class="form-group">
-                <label>End Date</label>
-                <input type="date" name="end" required>
+                <label>Group Size</label>
+                <input type="number" name="guests" min="2" max="200" placeholder="e.g. 24" required>
               </div>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label>Guests</label>
-                <input type="number" name="guests" min="1" max="14" placeholder="e.g. 6" required>
-              </div>
-              <div class="form-group">
-                <label>Embark From</label>
-                <select name="port" required>
-                  <option value="">Select port...</option>
-                  <option>Monaco</option>
-                  <option>Antibes, France</option>
-                  <option>Portofino, Italy</option>
-                  <option>Naples, Italy</option>
-                  <option>Athens, Greece</option>
-                  <option>Mykonos, Greece</option>
-                  <option>Tortola, BVI</option>
-                  <option>St. Thomas, USVI</option>
-                </select>
-              </div>
+            <div class="form-group">
+              <label>Type of Occasion</label>
+              <select name="occasion" required>
+                <option value="">Select occasion...</option>
+                <option>Business / Corporate Outing</option>
+                <option>Client Entertainment</option>
+                <option>Team Building</option>
+                <option>Family Reunion</option>
+                <option>Class Reunion</option>
+                <option>Birthday Celebration</option>
+                <option>Anniversary</option>
+                <option>Retirement Party</option>
+                <option>Holiday Event</option>
+                <option>Wedding Party / Bachelor/Bachelorette</option>
+                <option>Other Celebration</option>
+              </select>
             </div>
 
-            <h3 style="margin: 2.5rem 0 1.25rem; font-size: 1.2rem;">Lead Guest</h3>
+            <div class="form-group">
+              <label>Activities of Interest</label>
+              <select name="activities" required>
+                <option value="">Select primary interest...</option>
+                <option>Boating Only</option>
+                <option>Boating + Fine Dining</option>
+                <option>Boating + Golf</option>
+                <option>Full Package (Boating, Golf, Pool, Dining)</option>
+                <option>Golf + Dining (No Boating)</option>
+                <option>Custom — I'll describe below</option>
+              </select>
+            </div>
+
+            <h3 style="margin: 2.5rem 0 1.25rem; font-size: 1.2rem;">Your Information</h3>
 
             <div class="form-row">
               <div class="form-group">
@@ -108,47 +120,48 @@
             </div>
 
             <div class="form-group">
-              <label>Special Requests</label>
-              <textarea name="notes" placeholder="Dietary preferences, occasion, preferred itinerary, water toys..."></textarea>
+              <label>Company / Organization (optional)</label>
+              <input type="text" name="company" placeholder="e.g. Acme Corp, Henderson Family">
             </div>
 
-            <button type="submit" class="btn btn-primary booking-submit">Request Reservation</button>
-            <p style="font-size: 0.82rem; color: var(--muted); margin-top: 1rem; text-align: center;">No payment taken today. Your planner will confirm availability and send a hold agreement.</p>
+            <div class="form-group">
+              <label>Tell Us More</label>
+              <textarea name="notes" placeholder="Any special requests, dietary needs, preferred timing, budget range, or details about your occasion..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary booking-submit">Send My Request</button>
+            <p style="font-size: 0.82rem; color: var(--muted); margin-top: 1rem; text-align: center;">No payment taken today. We'll confirm availability and send a custom proposal within one business day.</p>
           </form>
 
-          <!-- Summary -->
+          <!-- Summary sidebar -->
           <aside class="booking-summary">
-            <span class="summary-eyebrow">Reservation Summary</span>
-            <h3>Your charter</h3>
+            <span class="summary-eyebrow">What Happens Next</span>
+            <h3>Our process</h3>
             <div class="summary-row">
-              <span class="label">Yacht</span>
-              <span class="value" id="sum-yacht">—</span>
-            </div>
-            <div class="summary-row">
-              <span class="label">Dates</span>
-              <span class="value" id="sum-dates">—</span>
+              <span class="label">Step 1</span>
+              <span class="value">Submit your request</span>
             </div>
             <div class="summary-row">
-              <span class="label">Nights</span>
-              <span class="value" id="sum-nights">—</span>
+              <span class="label">Step 2</span>
+              <span class="value">We contact you within 1 business day</span>
             </div>
             <div class="summary-row">
-              <span class="label">Guests</span>
-              <span class="value" id="sum-guests">—</span>
+              <span class="label">Step 3</span>
+              <span class="value">Receive a custom proposal &amp; quote</span>
             </div>
             <div class="summary-row">
-              <span class="label">Charter Fee</span>
-              <span class="value" id="sum-subtotal">—</span>
+              <span class="label">Step 4</span>
+              <span class="value">Review, adjust, and confirm</span>
             </div>
-            <div class="summary-row">
-              <span class="label">APA (est. 30%)</span>
-              <span class="value" id="sum-apa">—</span>
+            <div class="summary-row" style="border-bottom: none; padding-top: 1.5rem; margin-top: 0.5rem; border-top: 2px solid var(--navy-900);">
+              <span class="label" style="font-family: var(--serif); font-size: 1.1rem;">We handle everything</span>
             </div>
-            <div class="summary-row total">
-              <span class="label">Estimated Total</span>
-              <span class="value" id="sum-total">—</span>
+            <p style="font-size: 0.88rem; color: var(--muted); margin-top: 1.25rem; line-height: 1.7;">Boats, crew, tee times, pool access, dinner reservations, transportation logistics — our team coordinates every piece so you can focus entirely on your group.</p>
+
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line);">
+              <p style="font-size: 0.82rem; color: var(--muted);">Questions before you book?</p>
+              <a href="contact.html" class="btn btn-outline-dark" style="margin-top: 0.75rem; display: inline-block; width: 100%; text-align: center;">Talk to our team</a>
             </div>
-            <p style="font-size: 0.82rem; color: var(--muted); margin-top: 1.25rem;">Final pricing is confirmed by your planner and may vary based on port choice, season, and itinerary.</p>
           </aside>
         </div>
       </div>
@@ -156,12 +169,12 @@
       <!-- Confirmation -->
       <div class="confirmation" id="confirmation">
         <div class="check">✓</div>
-        <span class="eyebrow">Reservation Received</span>
-        <h2>Thank you. We're on it.</h2>
-        <p style="color: var(--muted); max-width: 500px; margin: 1rem auto;">Your dedicated planner will be in touch within four hours to confirm availability and walk you through next steps.</p>
+        <span class="eyebrow">Request Received</span>
+        <h2>We're on it.</h2>
+        <p style="color: var(--muted); max-width: 500px; margin: 1rem auto;">Our team will reach out within one business day with availability and a custom proposal tailored to your group and occasion.</p>
         <div class="ref">Reference: <span id="confirm-ref"></span></div>
         <div style="margin-top: 2rem;">
-          <a href="index.html" class="btn btn-outline-dark">Return home</a>
+          <a href="index.html" class="btn btn-outline-dark">Return Home</a>
         </div>
       </div>
     </div>
@@ -171,39 +184,38 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="logo" style="margin-bottom: 1.25rem;">MARIS<span class="gold">.</span></div>
-          <p>Private luxury yacht charters in the Mediterranean and Caribbean. Operating since 2005.</p>
+          <div class="logo" style="margin-bottom: 1.25rem;">CONROE<span class="gold">.</span></div>
+          <p>Premier group experiences on Lake Conroe, Texas — boating, golf, private club, and fine dining, all in one unforgettable day.</p>
         </div>
         <div>
-          <h4>Charter</h4>
+          <h4>Experiences</h4>
           <ul>
-            <li><a href="fleet.html">Our Fleet</a></li>
-            <li><a href="booking.html">Reserve</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="fleet.html">All Packages</a></li>
+            <li><a href="fleet.html#boating">Boating</a></li>
+            <li><a href="fleet.html#events">Events &amp; Occasions</a></li>
+            <li><a href="booking.html">Book Now</a></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Careers</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Plan an Event</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li>Quai Antoine 1er, Monaco</li>
-            <li>+377 99 99 12 34</li>
+            <li>Lake Conroe, Montgomery, TX</li>
+            <li>(936) 555-0148</li>
             <li>delbusinessenterprises@hotmail.com</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <div>© 2026 Del Business Enterprises. All rights reserved.</div>
-        <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></div>
+        <div>© 2026 Lake Conroe Escapes. All rights reserved.</div>
+        <div><a href="#">Privacy</a> · <a href="#">Terms</a></div>
       </div>
     </div>
   </footer>

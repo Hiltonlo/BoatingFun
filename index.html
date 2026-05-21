@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maris Yacht Charters — Private Luxury Yacht Charters</title>
-  <meta name="description" content="Private luxury yacht charters in the Mediterranean and Caribbean. Crewed motor yachts, sailing yachts, and catamarans available by the day or week.">
+  <title>Lake Conroe Escapes — Premier Lake Experiences in Texas</title>
+  <meta name="description" content="Business outings, reunions, celebrations, and holiday events on Lake Conroe. Private boating, championship golf, private club swimming, and fine dining — all in one unforgettable experience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,14 +15,14 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="logo">MARIS<span class="gold">.</span></a>
+      <a href="index.html" class="logo">CONROE<span class="gold">.</span></a>
       <button class="nav-toggle" aria-label="Menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="fleet.html">Experiences</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="nav-cta">Reserve</a></li>
+        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
       </ul>
     </div>
   </nav>
@@ -34,47 +34,67 @@
         <defs>
           <linearGradient id="hero-sky" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stop-color="#0a1929"/>
-            <stop offset="1" stop-color="#16304a"/>
+            <stop offset="0.55" stop-color="#0f3352"/>
+            <stop offset="1" stop-color="#0d2a44"/>
+          </linearGradient>
+          <linearGradient id="hero-water" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0d2a44"/>
+            <stop offset="1" stop-color="#071622"/>
           </linearGradient>
         </defs>
+        <rect width="1440" height="800" fill="url(#hero-sky)"/>
         <!-- Stars -->
-        <circle cx="200" cy="120" r="0.8" fill="#fff" opacity="0.6"/>
-        <circle cx="380" cy="80" r="1" fill="#fff" opacity="0.5"/>
-        <circle cx="600" cy="160" r="0.7" fill="#fff" opacity="0.4"/>
-        <circle cx="900" cy="100" r="1" fill="#fff" opacity="0.7"/>
-        <circle cx="1100" cy="180" r="0.6" fill="#fff" opacity="0.4"/>
-        <circle cx="1280" cy="120" r="0.9" fill="#fff" opacity="0.5"/>
+        <circle cx="150" cy="80" r="0.9" fill="#fff" opacity="0.6"/>
+        <circle cx="320" cy="55" r="1.1" fill="#fff" opacity="0.5"/>
+        <circle cx="520" cy="130" r="0.7" fill="#fff" opacity="0.4"/>
+        <circle cx="780" cy="70" r="1" fill="#fff" opacity="0.7"/>
+        <circle cx="1020" cy="110" r="0.8" fill="#fff" opacity="0.5"/>
+        <circle cx="1200" cy="60" r="0.9" fill="#fff" opacity="0.6"/>
+        <circle cx="1380" cy="140" r="0.7" fill="#fff" opacity="0.4"/>
+        <circle cx="90" cy="200" r="0.6" fill="#fff" opacity="0.3"/>
+        <circle cx="450" cy="175" r="0.8" fill="#fff" opacity="0.4"/>
+        <circle cx="900" cy="165" r="0.7" fill="#fff" opacity="0.35"/>
         <!-- Moon glow -->
-        <circle cx="1100" cy="260" r="120" fill="#c9a961" opacity="0.06"/>
-        <circle cx="1100" cy="260" r="60" fill="#c9a961" opacity="0.12"/>
-        <circle cx="1100" cy="260" r="35" fill="#d9bd7a" opacity="0.25"/>
+        <circle cx="280" cy="200" r="130" fill="#c9a961" opacity="0.05"/>
+        <circle cx="280" cy="200" r="65" fill="#c9a961" opacity="0.10"/>
+        <circle cx="280" cy="200" r="38" fill="#d9bd7a" opacity="0.22"/>
+        <!-- Texas treeline silhouette -->
+        <path d="M0 430 Q30 400 60 420 Q80 390 110 410 Q140 375 170 405 Q200 380 230 415 Q260 370 300 400 Q330 385 360 418 Q390 370 430 395 Q460 375 500 405 Q530 370 570 400 Q600 380 640 418 Q670 375 710 395 Q740 380 780 410 Q810 375 850 395 Q880 370 920 400 Q950 380 990 418 Q1020 370 1060 395 Q1090 375 1130 405 Q1160 370 1200 400 Q1230 380 1270 418 Q1300 370 1340 395 Q1380 380 1440 410 L1440 490 L0 490 Z" fill="#071622" opacity="0.7"/>
+        <!-- Water surface -->
+        <rect y="490" width="1440" height="310" fill="url(#hero-water)"/>
         <!-- Horizon glow -->
-        <ellipse cx="720" cy="500" rx="900" ry="80" fill="#c9a961" opacity="0.08"/>
-        <!-- Distant yacht -->
-        <g transform="translate(900, 480)" opacity="0.65">
-          <path d="M0 30 Q30 50 150 50 L180 30 Z" fill="#c9a961"/>
-          <path d="M20 14 L160 14 L150 30 L30 30 Z" fill="#c9a961" opacity="0.8"/>
-          <line x1="90" y1="14" x2="90" y2="-50" stroke="#c9a961" stroke-width="0.8"/>
-        </g>
-        <!-- Water waves -->
-        <path d="M0 550 Q360 530 720 550 T1440 550 L1440 800 L0 800 Z" fill="#0a1929" opacity="0.5"/>
-        <path d="M0 600 Q360 580 720 600 T1440 600 L1440 800 L0 800 Z" fill="#0a1929" opacity="0.6"/>
-        <path d="M0 650 Q360 630 720 650 T1440 650 L1440 800 L0 800 Z" fill="#0a1929" opacity="0.7"/>
-        <path d="M0 700 Q360 680 720 700 T1440 700 L1440 800 L0 800 Z" fill="#0a1929" opacity="0.85"/>
+        <ellipse cx="720" cy="490" rx="960" ry="60" fill="#c9a961" opacity="0.07"/>
         <!-- Moon reflection on water -->
-        <ellipse cx="1100" cy="580" rx="6" ry="3" fill="#d9bd7a" opacity="0.4"/>
-        <ellipse cx="1100" cy="620" rx="10" ry="3" fill="#d9bd7a" opacity="0.3"/>
-        <ellipse cx="1100" cy="660" rx="14" ry="3" fill="#d9bd7a" opacity="0.2"/>
-        <ellipse cx="1100" cy="700" rx="20" ry="3" fill="#d9bd7a" opacity="0.15"/>
+        <ellipse cx="280" cy="540" rx="5" ry="2" fill="#d9bd7a" opacity="0.45"/>
+        <ellipse cx="280" cy="570" rx="9" ry="2.5" fill="#d9bd7a" opacity="0.3"/>
+        <ellipse cx="280" cy="610" rx="14" ry="3" fill="#d9bd7a" opacity="0.2"/>
+        <ellipse cx="280" cy="655" rx="20" ry="3" fill="#d9bd7a" opacity="0.13"/>
+        <!-- Boat on water -->
+        <g transform="translate(820, 460)" opacity="0.75">
+          <!-- hull -->
+          <path d="M0 35 Q20 55 170 55 L200 35 Z" fill="#c9a961"/>
+          <!-- cabin -->
+          <path d="M25 18 L175 18 L165 35 L35 35 Z" fill="#c9a961" opacity="0.82"/>
+          <path d="M65 6 L150 6 L150 18 L65 18 Z" fill="#c9a961" opacity="0.7"/>
+          <!-- mast light -->
+          <line x1="105" y1="6" x2="105" y2="-28" stroke="#c9a961" stroke-width="1"/>
+          <circle cx="105" cy="-30" r="3" fill="#d9bd7a" opacity="0.9"/>
+        </g>
+        <!-- Dock -->
+        <path d="M1050 490 L1050 560 M1080 490 L1080 560 M1045 510 L1085 510 M1045 530 L1085 530 M1045 550 L1085 550" stroke="#c9a961" stroke-width="1.5" opacity="0.3"/>
+        <!-- Gentle wave lines -->
+        <path d="M0 560 Q360 545 720 560 T1440 560" stroke="rgba(201,169,97,0.12)" stroke-width="1" fill="none"/>
+        <path d="M0 610 Q360 595 720 610 T1440 610" stroke="rgba(201,169,97,0.08)" stroke-width="1" fill="none"/>
+        <path d="M0 660 Q360 645 720 660 T1440 660" stroke="rgba(201,169,97,0.06)" stroke-width="1" fill="none"/>
       </svg>
     </div>
     <div class="hero-content">
-      <span class="eyebrow">Private Crewed Charters</span>
-      <h1>The sea, <span class="italic">unhurried.</span></h1>
-      <p class="subtitle">Bespoke yacht charters in the Mediterranean and the Caribbean — fully crewed, beautifully provisioned, planned around you.</p>
+      <span class="eyebrow">Lake Conroe, Texas</span>
+      <h1>Lake Conroe, <span class="italic">unforgettable.</span></h1>
+      <p class="subtitle">Premium group experiences on the water — private boating, championship golf, exclusive club access, and fine dining, perfectly combined for business outings, reunions, and celebrations.</p>
       <div class="hero-cta">
-        <a href="fleet.html" class="btn btn-primary">Explore the fleet</a>
-        <a href="booking.html" class="btn btn-outline">Reserve a charter</a>
+        <a href="booking.html" class="btn btn-primary">Plan Your Event</a>
+        <a href="fleet.html" class="btn btn-outline">Explore Experiences</a>
       </div>
     </div>
     <div class="hero-scroll">Scroll ▾</div>
@@ -84,69 +104,129 @@
   <section class="values">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Why Maris</span>
-        <h2>A different kind of charter</h2>
-        <p>Twenty years in private yachting. Vessels we operate ourselves. Crews chosen for warmth as much as seamanship.</p>
+        <span class="eyebrow">Everything in One Place</span>
+        <h2>More than a boat ride</h2>
+        <p>We combine Lake Conroe's finest experiences into one seamless outing — so your group does nothing but enjoy themselves.</p>
       </div>
       <div class="values-grid">
         <div class="value reveal">
           <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
-            <path d="M32 8 L40 28 L60 28 L44 42 L50 60 L32 50 L14 60 L20 42 L4 28 L24 28 Z"/>
+            <path d="M8 40 Q20 30 32 36 Q44 30 56 40"/>
+            <path d="M4 48 Q16 36 32 42 Q48 36 60 48"/>
+            <path d="M12 32 Q22 20 32 28 Q42 20 52 32"/>
+            <ellipse cx="32" cy="52" rx="28" ry="6" opacity="0.3"/>
           </svg>
-          <h3>Curated Fleet</h3>
-          <p>Twelve vessels — every one inspected, refit, and crewed to a standard we'd accept ourselves.</p>
+          <h3>Private Boating</h3>
+          <p>Fully crewed boats on Lake Conroe — perfect for cruising, swimming, water sports, and soaking in the Texas scenery.</p>
         </div>
         <div class="value reveal">
           <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
-            <circle cx="32" cy="32" r="22"/>
-            <path d="M32 18 L32 32 L42 38"/>
+            <circle cx="16" cy="44" r="4"/>
+            <path d="M16 40 L28 20 L34 28"/>
+            <path d="M20 28 L42 28 M42 28 L50 44"/>
+            <circle cx="50" cy="44" r="4"/>
+            <path d="M4 48 L60 48"/>
+            <path d="M30 28 L32 36"/>
           </svg>
-          <h3>Concierge Planning</h3>
-          <p>From port clearance to private chefs and shore excursions — a dedicated planner handles it all.</p>
+          <h3>Championship Golf</h3>
+          <p>Tee off at a private club course with stunning views. The ideal way to add friendly competition to any corporate outing or reunion.</p>
         </div>
         <div class="value reveal">
           <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
-            <path d="M12 36 Q32 24 52 36"/>
-            <path d="M8 44 Q32 28 56 44"/>
-            <path d="M16 28 L32 12 L48 28"/>
+            <path d="M12 28 Q12 14 32 14 Q52 14 52 28 Q52 46 32 54 Q12 46 12 28 Z"/>
+            <path d="M20 30 Q20 24 32 24 Q44 24 44 30"/>
+            <path d="M18 38 Q24 48 32 50 Q40 48 46 38"/>
           </svg>
-          <h3>Storied Destinations</h3>
-          <p>Lake Conroe, the Cyclades, the British Virgin Islands — and the quiet bays between.</p>
+          <h3>Private Club Swimming</h3>
+          <p>Cool off at an exclusive private club pool after your time on the water. A resort-level touch that elevates every event.</p>
         </div>
         <div class="value reveal">
           <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
-            <path d="M16 28 L32 12 L48 28 L48 52 L16 52 Z"/>
-            <path d="M28 52 L28 40 L36 40 L36 52"/>
+            <path d="M16 20 L16 48 M48 20 L48 48"/>
+            <path d="M10 48 L54 48"/>
+            <path d="M10 22 L54 22"/>
+            <path d="M24 22 L24 48 M40 22 L40 48"/>
+            <path d="M10 35 L54 35"/>
+            <circle cx="32" cy="14" r="4"/>
+            <path d="M28 18 Q32 22 36 18"/>
           </svg>
-          <h3>Private &amp; Discreet</h3>
-          <p>No itineraries shared, no logos on tenders. Your charter is yours alone.</p>
+          <h3>Fine Dining</h3>
+          <p>Cap your day with an expertly crafted dining experience at a lakeside venue — curated menus, premium service, and a view to match.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured fleet -->
+  <!-- Featured Experiences -->
   <section class="fleet-preview">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Signature Vessels</span>
-        <h2>Notable yachts in our fleet</h2>
-        <p>A glimpse of what's on the water this season. The full collection awaits in our fleet directory.</p>
+        <span class="eyebrow">Our Packages</span>
+        <h2>Experiences built for your group</h2>
+        <p>Whether it's a corporate outing for 20 or a family reunion for 60, we design the day around you.</p>
       </div>
       <div class="yacht-grid" id="featured-fleet"></div>
       <div style="text-align: center; margin-top: 3.5rem;" class="reveal">
-        <a href="fleet.html" class="btn btn-outline-dark">View all yachts</a>
+        <a href="fleet.html" class="btn btn-outline-dark">View all experiences</a>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Occasions -->
+  <section class="values" style="background: var(--ivory);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Perfect For</span>
+        <h2>Any occasion, any group</h2>
+        <p>We've created unforgettable days for every kind of gathering on Lake Conroe.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value reveal">
+          <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="12" y="20" width="40" height="30" rx="2"/>
+            <path d="M12 28 L32 38 L52 28"/>
+            <path d="M20 12 L20 20 M44 12 L44 20"/>
+          </svg>
+          <h3>Business Outings</h3>
+          <p>Reward your team or impress clients with a full-day Lake Conroe experience. Golf, boating, dining — all handled for you.</p>
+        </div>
+        <div class="value reveal">
+          <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="20" cy="22" r="7"/>
+            <circle cx="44" cy="22" r="7"/>
+            <circle cx="32" cy="34" r="7"/>
+            <path d="M8 52 Q8 40 20 40 Q26 40 32 44 Q38 40 44 40 Q56 40 56 52"/>
+          </svg>
+          <h3>Reunions</h3>
+          <p>Family reunions, class reunions, and group getaways — Lake Conroe is the backdrop that brings people together.</p>
+        </div>
+        <div class="value reveal">
+          <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M32 8 L36 22 L52 22 L40 32 L44 46 L32 38 L20 46 L24 32 L12 22 L28 22 Z"/>
+          </svg>
+          <h3>Celebrations</h3>
+          <p>Birthdays, anniversaries, retirements, and milestones — we handle every detail so you can celebrate fully.</p>
+        </div>
+        <div class="value reveal">
+          <svg class="value-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M32 10 L36 18 L44 12 L40 20 L52 20 L44 26 L48 36 L38 30 L32 40 L26 30 L16 36 L20 26 L12 20 L24 20 L20 12 L28 18 Z"/>
+            <path d="M20 44 Q32 54 44 44"/>
+            <path d="M18 50 Q32 62 46 50"/>
+          </svg>
+          <h3>Holiday Events</h3>
+          <p>The lake is magical during the holidays. From Fourth of July fireworks cruises to festive Christmas celebrations on the water.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
   <section class="experience">
     <div class="container">
-      <span class="eyebrow reveal">The Charter Experience</span>
-      <h2 class="reveal">Designed entirely around you.</h2>
-      <p class="reveal">Tell us how you'd like to spend your time on the water — whether that's an island-hopping itinerary, a quiet anchored week with a chef, or a milestone celebration with friends. We build it from there.</p>
-      <a href="booking.html" class="btn btn-primary reveal">Begin your charter</a>
+      <span class="eyebrow reveal">Plan Your Event</span>
+      <h2 class="reveal">Tell us how you want to spend the day.</h2>
+      <p class="reveal">Share your group size, occasion, and preferred date — we'll build a custom Lake Conroe experience around you and handle every detail from dock to dining table.</p>
+      <a href="booking.html" class="btn btn-primary reveal">Start Planning</a>
     </div>
   </section>
 
@@ -154,27 +234,27 @@
   <section class="testimonials">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">In the words of our guests</span>
-        <h2>Reflections from the water</h2>
+        <span class="eyebrow">In their words</span>
+        <h2>Groups who've been on the water</h2>
       </div>
       <div class="testimonial-grid">
         <div class="testimonial reveal">
           <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">Aurelia exceeded every expectation. The crew anticipated our every wish — our captain knew every quiet cove from Portofino to Capri.</p>
-          <div class="testimonial-author">Eleanor &amp; James W.</div>
-          <div class="testimonial-source">Aurelia · 7 days · Italy</div>
+          <p class="testimonial-text">Our entire sales team is still talking about it. The boat, the golf, the dinner — it all flowed seamlessly. Best corporate outing we've ever done.</p>
+          <div class="testimonial-author">Michael R., VP of Sales</div>
+          <div class="testimonial-source">Corporate Outing · 28 Guests · Lake Conroe</div>
         </div>
         <div class="testimonial reveal">
           <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">Booking with Maris was effortless. From the first call to the moment we stepped aboard, everything was considered and beautifully handled.</p>
-          <div class="testimonial-author">The Aubert Family</div>
-          <div class="testimonial-source">Celestine · 10 days · French Riviera</div>
+          <p class="testimonial-text">We planned our family reunion here and it was beyond anything we imagined. The crew handled everything — we just showed up and enjoyed it.</p>
+          <div class="testimonial-author">The Henderson Family</div>
+          <div class="testimonial-source">Family Reunion · 52 Guests · Lake Conroe</div>
         </div>
         <div class="testimonial reveal">
           <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">A celebration we'll never forget. The chef on board was extraordinary. We're already planning next summer.</p>
-          <div class="testimonial-author">Marcus &amp; Inés D.</div>
-          <div class="testimonial-source">Orion · 5 days · Greek Islands</div>
+          <p class="testimonial-text">My husband's 50th birthday on Lake Conroe was absolutely perfect. The sunset cruise, the private dinner, the little personal touches — truly unforgettable.</p>
+          <div class="testimonial-author">Sandra &amp; Tom W.</div>
+          <div class="testimonial-source">Birthday Celebration · Lake Conroe</div>
         </div>
       </div>
     </div>
@@ -185,39 +265,38 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="logo" style="margin-bottom: 1.25rem;">MARIS<span class="gold">.</span></div>
-          <p>Private luxury yacht charters in the Mediterranean and Caribbean. Operating since 2005.</p>
+          <div class="logo" style="margin-bottom: 1.25rem;">CONROE<span class="gold">.</span></div>
+          <p>Premier group experiences on Lake Conroe, Texas — boating, golf, private club, and fine dining, all in one unforgettable day.</p>
         </div>
         <div>
-          <h4>Charter</h4>
+          <h4>Experiences</h4>
           <ul>
-            <li><a href="fleet.html">Our Fleet</a></li>
-            <li><a href="booking.html">Reserve</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="fleet.html">All Packages</a></li>
+            <li><a href="fleet.html#boating">Boating</a></li>
+            <li><a href="fleet.html#events">Events &amp; Occasions</a></li>
+            <li><a href="booking.html">Book Now</a></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Careers</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Plan an Event</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li>Quai Antoine 1er, Monaco</li>
-            <li>+377 99 99 12 34</li>
+            <li>Lake Conroe, Montgomery, TX</li>
+            <li>(936) 555-0148</li>
             <li>delbusinessenterprises@hotmail.com</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <div>© 2026 Maris Yacht Charters. All rights reserved.</div>
-        <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></div>
+        <div>© 2026 Lake Conroe Escapes. All rights reserved.</div>
+        <div><a href="#">Privacy</a> · <a href="#">Terms</a></div>
       </div>
     </div>
   </footer>
